@@ -250,7 +250,7 @@ DupeSection:NewButton("Crystal Greaves", "Need 2 Items To dupe it", function()
 	local price = 100000
 	game:GetService("ReplicatedStorage").Events.SubmitTrade:FireServer(Item, amount, price)
 end)
-CombatSection:NewKeybind("AutoWoodWallKeyBind", "KeybindInfo", Enum.KeyCode.RightShift, function()
+CombatSection:NewKeybind("AutoWoodWallKeyBind", "KeybindInfo", Enum.KeyCode.F2, function()
 	local Event = game:GetService("ReplicatedStorage").Events.PlaceStructure
 h = game.Players.LocalPlayer.Character.LowerTorso.Position
 local aa = h.x + 13
@@ -286,7 +286,7 @@ local n_3 = 270
 local Event = game:GetService("ReplicatedStorage").Events.PlaceStructure
 Event:FireServer(n_1, n_2, n_3)
 end)
-CombatSection:NewKeybind("DockKeyBind", "KeybindInfo", Enum.KeyCode.RightShift, function()
+CombatSection:NewKeybind("DockKeyBind", "KeybindInfo", Enum.KeyCode.F1, function()
 	local Event = game:GetService("ReplicatedStorage").Events.PlaceStructure
 h = game.Players.LocalPlayer.Character.LowerTorso.Position
 local aa = h.x + 13
