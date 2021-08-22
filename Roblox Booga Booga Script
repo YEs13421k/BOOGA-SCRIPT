@@ -322,6 +322,14 @@ local n_3 = 270
 local Event = game:GetService("ReplicatedStorage").Events.PlaceStructure
 Event:FireServer(n_1, n_2, n_3)
 end)
+CombatSection:NewKeybind("AutoEat", "AutoEatBloodfruit", Enum.KeyCode.E, function()
+local args = {
+    [1] = "Bloodfruit"
+}
+
+game:GetService("ReplicatedStorage").Events.UseBagItem:FireServer(unpack(args))
+
+end)
 AutoPlaceSection:NewButton("AutoFarmBlood", "KeyBind P To Place Box And [ To plant blood", function()
       local placekey = "p"
 local plantkey = "["
